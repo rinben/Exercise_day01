@@ -36,9 +36,21 @@ object Exercises {
     println()
     //Exercise 8
     println(prime_list(100))
+    println()
     //Exercise 9
-
+    println(sort(1,2,3))
+    println(sort(2,3,1))
+    println(sort(3,1,2))
+    println(sort(1,3,2))
+    println(sort(3,2,1))
+    println(sort(2,1,3))
+    println()
     //Exercise 10
+    println(perfectNumber(28))
+    println(perfectNumber(272))
+    println(perfectNumber(496))
+    println(perfectNumber(8128))
+    println()
   }
   //Exercise 1
   def nameAge(name:String, age:Int):String = {
@@ -123,83 +135,72 @@ object Exercises {
   }
   //Exercise 7
   def prime_num(num:Int):Boolean = {
-    val prime_list=List(2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97)
     var bool=true
-    for (i<- 0 until prime_list.length){
-      if (num % prime_list(i) == 0) {
+    for (i<- 2 until num){
+      if (num % i == 0) {
         bool = false
       }
-      if (num == prime_list(i)) {
-        bool = true
-      }
-
     }
     bool
   }
   //Exercise 8
-  def prime_list(limit:Int):List[Int]={
-    var count=limit
-    var ret_list=Set[Int]()
-    while (count>=0) {
-      for (i <- 2 to count if count % i != 0) {
-        ret_list = ret_list.+(i)
-      }
-      count=count-1
+  def prime_list(limit:Int):List[Int]= {
+    var ret_list=List[Int]()
+    for (i:Int<-2 to limit if prime_num(i)){
+      ret_list=ret_list.appendedAll(List(i))
     }
-    ret_list.toList.sortWith(_<_)
+    ret_list
   }
   //Exercise 9
   def sort(x:Int, y:Int, z:Int): String = {
     if (x >= y && x >= z) {
       if (y >= z) {
-        return z + "," + y +  "," + x
+        z + "," + y +  "," + x
       }
       else {
-        return y + "," + z + "," + x
+        y + "," + z + "," + x
       }
     }
     else if (y >= x && y >= z) {
       if (x >= z) {
-        return z + "," + x +  "," + y
+        z + "," + x +  "," + y
         }
       else {
-        return x + "," + z + "," + y
+        x + "," + z + "," + y
         }
       }
     else {
       if (y >=x ){
-        return x + "," + y +  "," + z
+        x + "," + y +  "," + z
       }
       else {
-        return y + "," + x + "," + z
+        y + "," + x + "," + z
       }
     }
   }
 
   //Exercise 10
-   def perfectNumber(x:Int): String = {
-    var divisors = new Array[Int](x)
+  def perfectNumber(x:Int): String = {
+    val divisors = new Array[Int](x)
     var sum = 0
-      for (i <- 0 to x-1){
-        if (i !=0 && x%i == 0 ){
-          divisors(i) = i
-        }
-        else{
-          divisors(i) = 0
-        }
+    for (i <- 0 until x){
+      if (i !=0 && x%i == 0 ){
+        divisors(i) = i
       }
-    for (k <- 0 to x-1){
+      else{
+        divisors(i) = 0
+      }
+    }
+    for (k <- 0 until x){
       if (divisors(k) !=0 && x%divisors(k) == 0) {
         sum = sum + divisors(k)
       }
     }
     if (sum == x){
-      print("true")
-      return "true"
+      "true"
     }
     else {
-      print("false")
-      return "false"
+      "false"
     }
   }
 }

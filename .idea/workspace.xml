@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa968931-a068-4fd1-9638-16743c51f261" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Exercises.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/Exercises.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,17 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Exercises.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
-              <folding>
-                <element signature="e#798#1072#0" />
-                <element signature="e#1075#1166#0" />
-                <element signature="e#1169#1393#0" />
-                <element signature="e#1396#1767#0" />
-                <element signature="e#1770#1938#0" />
-                <element signature="e#1941#2257#0" />
-                <element signature="e#2395#2734#0" />
-              </folding>
+            <state relative-caret-position="-3253">
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -59,26 +48,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ExercisesDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExercisesDay01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ExercisesDay01" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ExercisesDay01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -168,17 +138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Exercises.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="148" column="33" lean-forward="true" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
-          <folding>
-            <element signature="e#798#1072#0" />
-            <element signature="e#1075#1166#0" />
-            <element signature="e#1169#1393#0" />
-            <element signature="e#1396#1767#0" />
-            <element signature="e#1770#1938#0" />
-            <element signature="e#1941#2257#0" />
-            <element signature="e#2395#2734#0" />
-          </folding>
+        <state relative-caret-position="-3253">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
         </state>
       </provider>
     </entry>
