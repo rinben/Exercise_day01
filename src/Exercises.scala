@@ -149,6 +149,57 @@ object Exercises {
     ret_list.toList.sortWith(_<_)
   }
   //Exercise 9
+  def sort(x:Int, y:Int, z:Int): String = {
+    if (x >= y && x >= z) {
+      if (y >= z) {
+        return z + "," + y +  "," + x
+      }
+      else {
+        return y + "," + z + "," + x
+      }
+    }
+    else if (y >= x && y >= z) {
+      if (x >= z) {
+        return z + "," + x +  "," + y
+        }
+      else {
+        return x + "," + z + "," + y
+        }
+      }
+    else {
+      if (y >=x ){
+        return x + "," + y +  "," + z
+      }
+      else {
+        return y + "," + x + "," + z
+      }
+    }
+  }
 
   //Exercise 10
+   def perfectNumber(x:Int): String = {
+    var divisors = new Array[Int](x)
+    var sum = 0
+      for (i <- 0 to x-1){
+        if (i !=0 && x%i == 0 ){
+          divisors(i) = i
+        }
+        else{
+          divisors(i) = 0
+        }
+      }
+    for (k <- 0 to x-1){
+      if (divisors(k) !=0 && x%divisors(k) == 0) {
+        sum = sum + divisors(k)
+      }
+    }
+    if (sum == x){
+      print("true")
+      return "true"
+    }
+    else {
+      print("false")
+      return "false"
+    }
+  }
 }
