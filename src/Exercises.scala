@@ -149,6 +149,32 @@ object Exercises {
     ret_list.toList.sortWith(_<_)
   }
   //Exercise 9
+  def sort(x:Int, y:Int, z:Int): String = {
+    if (x >= y && x >= z) {
+      if (y >= z) {
+        return z + "," + y +  "," + x
+      }
+      else {
+        return y + "," + z + "," + x
+      }
+    }
+    else if (y >= x && y >= z) {
+      if (x >= z) {
+        return z + "," + x +  "," + y
+        }
+      else {
+        return x + "," + z + "," + y
+        }
+      }
+    else {
+      if (y >=x ){
+        return x + "," + y +  "," + z
+      }
+      else {
+        return y + "," + x + "," + z
+      }
+    }
+  }
 
   //Exercise 10
    def perfectNumber(x:Int): String = {
