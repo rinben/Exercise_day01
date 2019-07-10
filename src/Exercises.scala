@@ -35,7 +35,7 @@ object Exercises {
     println(prime_num(1237))
     println()
     //Exercise 8
-
+    println(prime_list(100))
     //Exercise 9
 
     //Exercise 10
@@ -138,15 +138,15 @@ object Exercises {
   }
   //Exercise 8
   def prime_list(limit:Int):List[Int]={
-    var retList = List()
-    var count=0
-    while (count<limit){
-      var n=limit-count
-      for (i<-2 until limit) {
-        if (n % i == 0)
+    var count=limit
+    var ret_list=Set[Int]()
+    while (count>=0) {
+      for (i <- 2 to count if count % i != 0) {
+        ret_list = ret_list.+(i)
       }
-      count=count+1
+      count=count-1
     }
+    ret_list.toList.sortWith(_<_)
   }
   //Exercise 9
 
